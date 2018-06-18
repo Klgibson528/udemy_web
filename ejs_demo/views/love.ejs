@@ -1,0 +1,14 @@
+<!--<% %> is for logic  -->
+<!--  <%= %> is for variables -->
+<% include partials/header %>
+<h1>Meet our:
+    <%= thing.toUpperCase() %>
+</h1>
+<% if(thing.toLowerCase() === "rusty"){ %>
+    <p>Good Choice!</p>
+    <% } else { %>
+        <p>Bad Choice!</p>
+        <% } %>
+            <p>p.s. this is the love .ejs file</p>
+
+            <% include partials/footer %>
